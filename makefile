@@ -33,16 +33,16 @@
 #
 # In order for the setup to work, a couple of conventions must be followed.
 #  • Name source files containing 'main()' function or 'PROGRAM' subroutine
-#    as 'main_[program].*', which will generate bynary files 'bin/[program]'
+#    as 'main_name.*', which will generate binary files 'bin/name'
 #  • Put all header files (.h, .hpp, .inc, ...) inside 'include/' directory
 #  • Put all source files (.c, .cpp, ...) inside 'src/' directory
-#  • For Fortran only, '[name]_*.f' are set as dependencies of 'bin/[name]'
+#  • For Fortran only, 'name_*.f' are set as dependencies of 'bin/name'
 #
 # Targets include:
 #  cleanbuild  delete all temporary files (*.o, *.mod)
 #  clean       cleanbuild + delete binary programs (bin/*)
 #  cleanall    clean + delete dependency information (.d/)
-#  [default]   when called without target, builds every 'main_[program].*'
+#  [default]   when called without target, builds every 'main_name.*'
 #
 #############################################################################
 
